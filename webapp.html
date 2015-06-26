@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" ,="" target-densitydpi="device-dpi">
+
+    <title>Hangman web app game</title>
+
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="main.css" media="screen" type="text/css">
+    <!-- <link rel="stylesheet" href="css/3DButtons.thm.css" media="screen" type="text/css" /> -->
+    <link rel="stylesheet" href="blackboard.thm.css" type="text/css">
+    <link rel="stylesheet" href="vex.css">
+    <link rel="stylesheet" href="vex-theme-wireframe.css">
+
+    </head>
+    <body class="" style="">
+
+  
+
+
+    <div id="bg"></div>
+
+    <!-- score
+    <div id="scoreContainer">
+      <div id="scoreText">Score: <span></span></div>
+    </div>
+    -->
+
+    <!-- words area -->
+
+
+      <div class="hidden-word-container">
+
+        <!-- blackboard Theme -->
+        <!-- <img src='blackboard.png' class='notepad'/> -->
+
+        <!-- 3D THEME -->
+        <img class="notepad" src="blackboard.png">
+
+        <div id="content"><div class="kineticjs-content" role="presentation" style="position: relative; display: inline-block; width: 550px; height: 300px;"><canvas width="550" height="300" style="padding: 0px; margin: 0px; border: 0px; position: absolute; top: 0px; left: 0px; width: 550px; height: 300px; background: transparent;"></canvas></div></div>
+
+        <div id="letters"><div class="alphabet" id="letter_0">A</div><div class="alphabet" id="letter_1">B</div><div class="alphabet" id="letter_2">C</div><div class="alphabet" id="letter_3">D</div><div class="alphabet" id="letter_4">E</div><div class="alphabet" id="letter_5">F</div><div class="alphabet grayscale" id="letter_6">G</div><div class="alphabet" id="letter_7">H</div><div class="alphabet" id="letter_8">I</div><div class="alphabet" id="letter_9">J</div><div class="alphabet" id="letter_10">K</div><div class="alphabet grayscale" id="letter_11">L</div><div class="alphabet" id="letter_12">M</div><div class="alphabet" id="letter_13">N</div><div class="alphabet" id="letter_14">O</div><div class="alphabet" id="letter_15">P</div><div class="alphabet" id="letter_16">Q</div><div class="alphabet" id="letter_17">R</div><div class="alphabet" id="letter_18">S</div><div class="alphabet" id="letter_19">T</div><div class="alphabet" id="letter_20">U</div><div class="alphabet" id="letter_21">V</div><div class="alphabet" id="letter_22">W</div><div class="alphabet" id="letter_23">X</div><div class="alphabet" id="letter_24">Y</div><div class="alphabet" id="letter_25">Z</div></div>
+
+        <div class="blocks"><div class="blockContainer" id="blockContainer0"><img src="blockW.png" class="blockes"> <span class="secretLetter" style="bottom: 15px; visibility: inherit; opacity: 1; display: block;">l</span></div><div class="blockContainer" id="blockContainer1"><img src="blockW.png" class="blockes"> <span class="secretLetter">a</span></div><div class="blockContainer" id="blockContainer2"><img src="blockW.png" class="blockes"> <span class="secretLetter">b</span></div><div class="blockContainer" id="blockContainer3"><img src="blockW.png" class="blockes"> <span class="secretLetter">e</span></div><div class="blockContainer" id="blockContainer4"><img src="blockW.png" class="blockes"> <span class="secretLetter" style="bottom: 15px; visibility: inherit; opacity: 1; display: block;">l</span></div></div>
+
+      </div>
+
+
+    <!-- MODALS -->
+
+      <!-- SCRIPTS -->
+      <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+      <script type="text/javascript" src="kinetic-v4.7.4.min.js"></script>
+      <script type="text/javascript" src="TweenMax.min.js"></script>
+      <script type="text/javascript" src="vex.combined.min.js"></script>
+      <script type="text/javascript" src="underscore-min.js"></script>
+      <script type="text/javascript" src="store+json2.min.js"></script>
+
+      <script type="text/javascript" src="words.js"></script>
+      <script type="text/javascript" src="Registry.js"></script>
+      <script type="text/javascript" src="canvasActions.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+      <!-- END OF SCRIPTS -->
+
+    
+  
+</body>
+</html>
